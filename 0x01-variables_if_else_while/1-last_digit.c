@@ -3,15 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - assigns and prints the last digit of the random
- * 
- * Return: Always 0 (Success)
- */
+* main - assigns and prints the last digit of the random
+* 
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 		int n;
 
-		
 	  	srand(time(0));
 		n = rand() - RAND_MAX / 2;
 			printf("Last digit of %d is %d ", n, n % 10);
