@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (z = 48; z <= 57; z++)
 			{
-				if (x == y || x ==z || y == z || y <= x \\z <= y)
+				if (x == y || x ==z || y == z || y <=x || z <= y)
 				{
 				}
 				else

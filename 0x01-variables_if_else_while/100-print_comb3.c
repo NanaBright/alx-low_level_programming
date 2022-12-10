@@ -10,7 +10,7 @@ int main(void)
 
 	for (x = 48; x <= 57; x++)
 	{
-		for (y = 48; y ,= 57; y++)
+		for (y = 48; y <= 57; y++)
 		{
 			if (x == y || y <= x)
 			{
@@ -19,7 +19,7 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
-				if (x == 56 && y =57)
+				if (x == 56 && y == 57)
 				{
 				}
 				else
