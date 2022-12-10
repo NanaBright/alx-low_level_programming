@@ -27,7 +27,7 @@ int main(void)
 					}
 					x++;
 				}
-				y++
+				y++;
 				x = 48;
 			}
 			j++;
