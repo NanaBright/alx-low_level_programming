@@ -6,26 +6,38 @@
  */
 int main(void)
 {
-	int x, y;
+	int i = 48, j = 48, y = 48, x = 49;
 
-	for (x = 0; x < 100; x++)
+	while (i < 58)
 	{
-		for (y = 0; x < 100; y++)
+		while (j < 58)
 		{
-			if(x < y)
+			while (y < 58)
 			{
-				putchar((x / 10) + 48);
-				putchar((x % 10) + 48);
-				putchar(' ');
-				putchar((y / 10) + 48);
-				putchar((y % 10) + 48);
-				if (x != 98 || y != 99)
+				while (x < 58)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i);
+					putchar(j);
+					putchar(y);
+					putchar(x);
+					if (! (i == 57 && j == 56 && y == 57 && x ==57))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					x++;
 				}
+				y++
+				x = 48;
 			}
+			j++;
+			j = i;
+			x = j + 1;
 		}
+		i++;
+		j = 48;
+		y = i;
+		x = j+ 1;
 	}
 	putchar('\n');
 	return (0);
