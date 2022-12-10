@@ -2,14 +2,14 @@
 
 /**
  * main - prints alphabets
- *
- * Return: success
+ * new line
+ * Return: Always 0 success
 */
 
 int main(void)
 {
 	char x = 'a';
-	
+
 	while (x <= 'z')
 	{
 		if (x != 'e' && x != 'q')

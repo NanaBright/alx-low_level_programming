@@ -2,8 +2,8 @@
 
 /**
 * main - assigns random number
-*
-* Return: Always 0(sucess)
+* new line then
+* Return: Always 0 (sucess)
 */
 int main(void)
 {

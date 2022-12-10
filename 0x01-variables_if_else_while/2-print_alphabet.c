@@ -2,8 +2,8 @@
 
 /**
 * main - prints the alphabets
-*
-* Return: 0 
+* new line follows then
+* Return: Always 0 success
 */
 int main(void)
 {
