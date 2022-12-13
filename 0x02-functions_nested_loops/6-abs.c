@@ -2,7 +2,7 @@
 
 /**
  * _abs - return an abs value
- * @n _ number to check
+ * @n : number to check
  * Return:0 or 1
  */
 
@@ -12,5 +12,5 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	return(-n);
+	return (-n);
 }
