@@ -19,7 +19,7 @@ void print_times_table(int n)
 		{
 			z = x * y;
 			if (y == 0)
-				_putchar('0' + z);
+				_putchar('0' + z);
 			else if (z < 10)
 		       {
 			      	_putchar(' ');
