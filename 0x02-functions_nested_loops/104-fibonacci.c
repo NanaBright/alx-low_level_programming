@@ -38,5 +38,5 @@ int main(void)
 		bef2 = aft2 - bef2;
 	}
 	printf("\n");
-	retturn (0);
+	return (0);
 }
