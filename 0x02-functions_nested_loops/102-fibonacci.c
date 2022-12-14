@@ -8,14 +8,14 @@
 int main(void)
 {
 	int i = 0;
-	long int x = 0, b = 1, z;
+	long int x = 0, y = 1, z;
 
 	while (i < 50)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		printd("i%lu", z);
+		printf("i%lu", z);
 
 		if (i < 49)
 		{
