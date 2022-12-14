@@ -15,7 +15,7 @@ int main(void)
 		z = x + y;
 		x = y;
 		y = z;
-		printf("i%lu", z);
+		printf("%ld", z);
 
 		if (i < 49)
 		{
