@@ -17,7 +17,7 @@ int main(void)
 		{
 			if (i % 3 == 0)
 			{
-				printf("FIZZ");
+				printf("Fizz");
 			}
 			if (i % 5 == 0)
 			{
