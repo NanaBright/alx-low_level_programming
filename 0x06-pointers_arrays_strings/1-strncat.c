@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * *_strncpy - copies a string
+ * _strncpy - copies a string
  * @dest: destination
  * @src: source
  * @n: number of bytes to concat
- * Return: result to dest
+ * Return: results to dest
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
-	
+
 	i = 0;
 	j = 0;
 
