@@ -3,7 +3,7 @@
 /**
  * _strncpy - copies a string
  * @dest: destination
- * @sr: source
+ * @src: source
  * @n: number of times to copy
  * Return: results
  */
