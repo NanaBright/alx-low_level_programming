@@ -2,7 +2,7 @@
 
 /**
  * power_operation - returns square root of a number
- * @n: input 
+ * @n: input
  * @i: iterator
  * Return: result
  */
@@ -10,14 +10,14 @@
 int power_operation(int n, int i)
 {
 	if (i * i > n)
-	       return (-1);
+		return (-1);
 	if (i * i == n)
 		return (i);
 	return (power_operation(n, i + 1));
 }
 /**
  * _sqrt_recursion - returns square root
- * @n: input 
+ * @n: input
  * Return: result
  */
 
