@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
 #include "main.h"
 
 /**
@@ -39,7 +37,7 @@ int_atoi(char *s)
 				break;
 			f = 0;
 		}
-		i++
+		i++;
 	}
 
 	if (f == 0)
@@ -56,15 +54,15 @@ int_atoi(char *s)
 
 int main(int argc, char *argv[])
 {
-	int sum, num, x, y, z;
+	int sum, num, i, j, k;
 
 	sum = 0;
 
-	for (x = 1; x < argc; x++)
+	for (i = 1; i < argc; i++)
 	{
-		for (y = 0; argv[x][y] != '\0'; y++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[x][y] > '9' || argv[x][y] < '0')
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
 				puts("Error");
 				return (1);
@@ -72,9 +70,9 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (z = 1; z < argc; z++)
+	for (k = 1; k < argc; k++)
 	{
-		num = _atoi(argv[z]);
+		num = _atoi(argv[k]);
 		if (num >= 0)
 		{
 			sum += num;
