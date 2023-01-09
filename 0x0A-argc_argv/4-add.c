@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 			if (argv[x][y] > '9' || argv[x][y] < '0')
 			{
 				puts("Error");
-				return (0);
+				return (1);
 			}
 		}
 	}
@@ -38,4 +38,4 @@ int main(int argc, char *argv[])
 
 	print("%d\n", sum);
 	return (0);
-}
+}i
