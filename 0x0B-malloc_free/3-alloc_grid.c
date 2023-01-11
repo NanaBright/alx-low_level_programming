@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - creates a 2D array 
- * @width: width of the array.
- * @height: height of the array.
+ * alloc_grid - creates a 2D array
+ * @width: width of the array
+ * @height: height of the array
  * Return: pointer of an array
  */
 
