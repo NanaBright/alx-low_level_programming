@@ -7,7 +7,7 @@
  * Return: poitner of an array
  */
 
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *dup;
 	unsigned int i, j;
