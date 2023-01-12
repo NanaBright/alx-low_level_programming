@@ -4,9 +4,12 @@
 
 /**
  * _memset - fills memory with a constant byte
+ *
  * @s: input pointer that represents memory block
+ *     to fill
  * @b: characters to fill/set
  * @n: number of bytes to be filled
+ *
  * Return: pointer to the filled memory area
 */
 
@@ -24,45 +27,52 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * _calloc - function that allocates memory
+ *           for an array using memset
+ *
  * @nmemb: size of array
  * @size: size of each element
+ *
  * Return: pointer to new allocated memory
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *pt;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	pt = malloc(nmemb * size);
-	if (pt == NULL)
+	ptr = malloc(nmemb * size);
+	if (ptr == NULL)
 		return (NULL);
-	_memset(pt, 0, nmemb * size);
+	_memset(ptr, 0, nmemb * size);
 
-	return (pt);
+	return (ptr);
 }
 
 
 /**
  * multiply - initialize array with 0 byte
+ *
  * @s1: string 1
  * @s2: string 2
+ *
  * Return: nothing
 */
 
 void multiply(char *s1, char *s2)
 {
 	int i, l1, l2, total_l, f_digit, s_digit, res = 0, tmp;
-	char *pt;
+	char *ptr;
 	void *temp;
 
 	l1 = _length(s1);
 	l2 = _length(s2);
 	tmp = l2;
 	total_l = l1 + l2;
-	pt = _calloc(sizeof(int), total_l);
-	temp = pt;
+	ptr = _calloc(sizeof(int), total_l);
+
+	/* store our pointer address to free later */
+	temp = ptr;
 
 	for (l1--; l1 >= 0; l1--)
 	{
@@ -72,22 +82,22 @@ void multiply(char *s1, char *s2)
 		for (l2--; l2 >= 0; l2--)
 		{
 			s_digit = s2[l2] - '0';
-			res += pt[l2 + l1 + 1] + (f_digit * s_digit);
-			pt[l1 + l2 + 1] = res % 10;
+			res += ptr[l2 + l1 + 1] + (f_digit * s_digit);
+			ptr[l1 + l2 + 1] = res % 10;
 			res /= 10;
 		}
 		if (res)
-			pt[l1 + l2 + 1] = res % 10;
+			ptr[l1 + l2 + 1] = res % 10;
 	}
 
-	while (*pt == 0)
+	while (*ptr == 0)
 	{
-		pt++;
+		ptr++;
 		total_l--;
 	}
 
 	for (i = 0; i < total_l; i++)
-		printf("%i", pt[i]);
+		printf("%i", ptr[i]);
 	printf("\n");
 	printf("\n");
 	free(temp);
@@ -96,9 +106,13 @@ void multiply(char *s1, char *s2)
 
 /**
  * main - Entry point
- * Description: a program that multiplies two positive numbers
+ *
+ * Description: a program that multiplies
+ *            two positive numbers
+ *
  * @argc: number of arguments
  * @argv: arguments array
+ *
  * Return: 0 on success 98 on faliure
 */
 
