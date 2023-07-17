@@ -1,8 +1,3 @@
-/*
- * File: 103-exponential.c
- * Auth: Nobert Patrick
- */
-
 #include "search_algos.h"
 
 /**
@@ -23,12 +18,12 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 	size_t i;
 
 	if (array == NULL)
-		rearching in array: ");
-		for (i = left; i < right;eturn (-1);
+		return (-1);
 
 	while (right >= left)
 	{
-		printf("S i++)
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
 
@@ -43,7 +38,6 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 
 	return (-1);
 }
-
 /**
   * exponential_search - Searches for a value in a sorted array
   *                      of integers using exponential search.
@@ -56,6 +50,7 @@ int _binary_search(int *array, size_t left, size_t right, int value)
   *
   * Description: Prints a value every time it is compared in the array.
   */
+
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t i = 0, right;

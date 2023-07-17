@@ -1,6 +1,4 @@
- * @value: value to find
- *   *
- *     * Return: index whe#include "search_algos.h"
+#include "search_algos.h"
 
 /**
   * linear_search - linear search

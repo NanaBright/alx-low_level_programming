@@ -12,6 +12,7 @@
  * Description: Prints a value every time it is compared in the list.
  *              Uses the square root of the list size as the jump step.
  */
+
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
 	skiplist_t *node, *jump;
@@ -23,10 +24,10 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 	{
 		node = jump;
 		if (jump->express != NULL)
-		d at index [%ld] = [%d]\n",
-					jump->index, jump{
+		{
 			jump = jump->express;
-			printf("Value checke->n);
+			printf("Value checked at index [%ld] = [%d]\n",
+					jump->index, jump->n);
 		}
 		else
 		{
@@ -38,8 +39,8 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 	printf("Value found between indexes [%ld] and [%ld]\n",
 			node->index, jump->index);
 
-	for (; node->index < jump->inf("Value checked at index [%ld] = [%d]\n", node->idex && node->n < value; node = node->next)
-		printndex, node->n);
+	for (; node->index < jump->index && node->n < value; node = node->next)
+		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
 	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
 
 	return (node->n == value ? node : NULL);
